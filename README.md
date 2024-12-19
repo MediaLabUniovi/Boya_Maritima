@@ -6,7 +6,7 @@ Este es el repositorio del proyecto de la Boya Marítima con sensor de PH y Temp
 - **Diseño impreso en 3D**: La estructura de la boya emplea elementos impresos en 3D.
 - **ESP32 Lilygo T7 V1.3**: El proyecto emplea una Esp32 Lilygo para el procesamiento de los datos de los sensores y su envío por tecnología LoRaWAN.
 - **Sensor de pH PH-405C**: Se utiliza este sensor con adaptador de señales incorporado para medir el PH del agua.
-- **Sensor de temperatura**: Se utiliza un sensor de temperatura del agua.
+- **Sensor de temperatura DS18B20**: Se utiliza un sensor de temperatura del agua.
 - **Baterías 18650 y gestor de baterías**: Incorporar baterías de larga duración y gestor de baterías con regulador de salida y adaptador para la carga.
 - **Placa solar de alimentación**: Se emplea una placa solar para alimentar la batería.
   
@@ -48,4 +48,39 @@ El ESP32 Lilygo es un microcontralador preparado para aplicaciones LoRaWAN con e
 ## Bajo consumo de energía
 En proyectos de este tipo es fundamental el ahorro de energía por eso para este proyecto se emplean baterias de 18650 con una capacidad de alrededor de 3000mAh conectada a un módulo gestor de baterías que permita su carga con placa solar. Además se coloca un transistor MOSFET a todos los neutros de los sensores de forma que estos no consuman cuando se ponga el dispositivo en modo reposo.
 
+## Funcionamiento
+1. **Copia el repositorio**:
+
+   Copia este repositorio a tu máquina local usando:
+
+   ```bash
+   git clone https://github.com/MedialabUniovi/Boya_Maritima.git
+   ```
+
+2. **Configura el entorno**:
+
+   Abre el proyecto con **Arduino IDE** y comprueba que se encuentren instaladas todas la librerias.
+
+3. **Monta el dispositivo**:
+
+   Conecta la Lilygo a los sensores y demás elementos según el esquemático.
+
+5. **Carga el código**:
+
+   Compila y carga el código al microcontrolador.
+
+6. **Añade la alimentación**:
+
+   Conecta la placa solar de alimentación y orientala correctamente.
+
+##Imágenes relacionadas
+
+![Schematic_Boya](https://github.com/user-attachments/assets/893db4ef-7693-4d1d-8caa-76ab88e3dea7)
+_<p align="center">Figura 1: Esquemático del proyecto </p>_
+![BoyaMontada](https://github.com/user-attachments/assets/7c1eb66b-6a0e-4067-acd2-910bbacb25bb)
+_<p align="center">Figura 2: Boya armada </p>_
+
+## Información adicional
+
+Se recomienda, como se puede observar en la foto, aislar el circuito electrónico tanto con sprays de laca para protejer contra la corrosión como en cajas aislantes de humedad.
 
