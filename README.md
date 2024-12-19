@@ -7,7 +7,7 @@ Este es el repositorio del proyecto de la Boya Marítima con sensor de PH y Temp
 - **ESP32 Lilygo T7 V1.3**: El proyecto emplea una Esp32 Lilygo para el procesamiento de los datos de los sensores y su envío por tecnología LoRaWAN.
 - **Sensor de pH PH-405C**: Se utiliza este sensor con adaptador de señales incorporado para medir el PH del agua.
 - **Sensor de temperatura DS18B20**: Se utiliza un sensor de temperatura del agua.
-- **Baterías 18650 y gestor de baterías**: Incorporar baterías de larga duración y gestor de baterías con regulador de salida y adaptador para la carga.
+- **Baterías 18650 y gestor de baterías**: Incorpora baterías de larga duración y gestor de baterías con regulador de salida y adaptador para la carga.
 - **Placa solar de alimentación**: Se emplea una placa solar para alimentar la batería.
   
 ## Módulo PH4502C sensor de pH
@@ -73,11 +73,11 @@ En proyectos de este tipo es fundamental el ahorro de energía por eso para este
 
    Conecta la placa solar de alimentación y orientala correctamente.
 
-##Imágenes relacionadas
+## Imágenes relacionadas
 
 ![Schematic_Boya](https://github.com/user-attachments/assets/893db4ef-7693-4d1d-8caa-76ab88e3dea7)
 _<p align="center">Figura 1: Esquemático del proyecto </p>_
-![BoyaMontada](https://github.com/user-attachments/assets/7c1eb66b-6a0e-4067-acd2-910bbacb25bb)
+![BoyaMontada](https://github.com/user-attachments/assets/afe61540-370c-45ae-a216-8b882d690783)
 _<p align="center">Figura 2: Boya armada </p>_
 
 ## Información adicional
