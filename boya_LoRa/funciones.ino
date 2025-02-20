@@ -29,6 +29,7 @@ void despierta_sensores(){
 
 /* Función de medida de la temperatura a 1 metro: */
 uint16_t obten_temp1m(){
+  Temp1m.begin();
   Temp1m.requestTemperatures();                     // Leo la temperatura y la almaceno
   float temperatura1m = Temp1m.getTempCByIndex(0);  // Selecciono el valor de temperatura del indice 0
   Serial.print("La temperatura a 1m es: ");
