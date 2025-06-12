@@ -73,7 +73,7 @@ En proyectos de este tipo es fundamental el ahorro de energía por eso para este
 
 ## Imágenes relacionadas
 
-![Schematic_Boya](https://github.com/user-attachments/assets/893db4ef-7693-4d1d-8caa-76ab88e3dea7)
+![Schematic_Boya](https://github.com/user-attachments/assets/53854baf-ec5f-4ede-a19f-cbfd5a31cf83)
 _<p align="center">Figura 1: Esquemático del proyecto </p>_
 ![BoyaMontada](https://github.com/user-attachments/assets/afe61540-370c-45ae-a216-8b882d690783)
 _<p align="center">Figura 2: Boya armada </p>_
