@@ -7,9 +7,9 @@
 #include "credenciales.h"
 
 const int pinSensor_Temp_1m=15;
-const int pinSensor_pH=12;
-const int pinSensor_T=14;
-const int pin_mos=13;
+//const int pinSensor_pH=12;
+//const int pinSensor_T=14;
+//const int pin_mos=13;
 const int pin_bat=34;
 
 static uint8_t txBuffer[8];   // Paquete de datos como variable estática global
@@ -19,10 +19,10 @@ static uint8_t txBuffer[8];   // Paquete de datos como variable estática global
 // Funcion para enviar el paquete de datos LoRa
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 void send(){
-  despierta_sensores();
-  delay(30000);           // 20 segundos para estabilización de la alimentación antes de la medida de pH
+  iniciaSensores();
+  delay(1000);           
   BuildPacket(txBuffer);
-  duerme_sensores();
+  //duerme_sensores();
   delay(1000);            // 1 segundo de delay para garantizar la buena desconexión de los sensores
 
 #if LORAWAN_CONFIRMED_EVERY > 0
@@ -127,9 +127,9 @@ void setup() {
   //
   pinMode(VBATPIN, INPUT);
   pinMode(pinSensor_Temp_1m, INPUT);
-  pinMode(pinSensor_T, INPUT);
-  pinMode(pinSensor_pH, INPUT);
-  pinMode(pin_mos, OUTPUT);
+  //pinMode(pinSensor_T, INPUT);
+  //pinMode(pinSensor_pH, INPUT);
+  //pinMode(pin_mos, OUTPUT);
 
   //Temp1m.begin();
 

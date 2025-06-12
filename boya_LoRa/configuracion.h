@@ -48,8 +48,8 @@ void ttn_register(void (*callback)(uint8_t message));
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 #define trigPin         13                  // Defino pin para 'Trig' - JSN-SR04T
 #define echoPin         12                  // Defino pin para 'Echo' - JSN-SR04T
-#define MAX_PH          14                  // En 'MAX_PH' guardaré de forma inmutable el valor maximo de pH posible
-#define MIN_PH          0                   // En 'MIN_PH' guardaré de forma inmutable el valor mínimo de pH posible
+//#define MAX_PH          14                  // En 'MAX_PH' guardaré de forma inmutable el valor maximo de pH posible
+//#define MIN_PH          0                   // En 'MIN_PH' guardaré de forma inmutable el valor mínimo de pH posible
 #define MAX_TEMP_1M     125                 // En 'MAX_TEMP_1M' guardaré de forma inmutable el valor máximo de temperatura a 1m posible
 #define MIN_TEMP_1M     -55                 // En 'MIN_TEMP_1M' guardaré de forma inmutable el valor mínimo de temperatura a 1m posible
 #define MAX_T           60                  // En 'MAX_T' guardaré de forma inmutable el valor mínimo de temperatura para la electrónica
