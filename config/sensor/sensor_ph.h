@@ -1,0 +1,46 @@
+#ifndef SENSOR_CONFIG_PH_H
+#define SENSOR_CONFIG_PH_H
+
+// Nombre del sensor
+#define SENSOR_PH_NAME "DFRobot pH Sensor"
+
+// ¿Qué mide?
+#define SENSOR_PH_HAS_PH true
+
+// Configuración hardware
+#define PH_ANALOG_PIN 25  // Pin ADC para sensor de pH DFRobot (GPIO25)
+
+// Control de alimentación
+#define PH_USE_POWER_CONTROL false  // true: usa MOSFET, false: alimentación permanente
+#ifndef PH_POWER_PIN
+#define PH_POWER_PIN 13   // Pin para controlar alimentación de sensores (si USE_POWER_CONTROL = true)
+#endif
+#define PH_POWER_ON_DELAY_MS 30000  // 30 segundos para estabilización (si USE_POWER_CONTROL = true)
+
+// Configuración del sensor DFRobot
+#define PH_REFERENCE_VOLTAGE 3.3f             // Voltaje de referencia ADC (3.3V para ESP32)
+#define PH_ADC_RESOLUTION 4096.0f             // Resolución ADC (12 bits = 4096 valores)
+
+// Temperatura para compensación (se puede actualizar con sensor de temperatura)
+#define PH_DEFAULT_TEMPERATURE 25.0f          // Temperatura por defecto en °C
+
+// Rangos válidos
+#define PH_MIN 0.0f
+#define PH_MAX 14.0f
+
+// Configuración de lecturas
+#define PH_READ_SAMPLES 10  // Número de muestras para promediar
+#define PH_READ_DELAY_MS 20  // Delay entre muestras (mínimo 20ms recomendado)
+
+// Simulación para testing: valor inicial, delta y periodo (minutos)
+#define PH_SIMULATE_DEFAULT true
+#define PH_SIM_BASE 8.10f
+#define PH_SIM_DELTA 0.15f
+#define PH_SIM_INTERVAL_MINUTES 1135
+
+// Simulación: ruido, persistencia y guardado
+#define PH_SIM_NOISE_MAX 0.03f                // Amplitud máxima de ruido añadido a cada lectura
+#define PH_SIM_PERSISTENCE true               // Guardar estado entre reinicios (Preferences)
+#define PH_SIM_SAVE_ON_TOGGLE true            // Guardar estado cuando cambia la dirección
+
+#endif // SENSOR_CONFIG_PH_H
